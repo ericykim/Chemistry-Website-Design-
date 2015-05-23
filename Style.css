@@ -1,0 +1,20 @@
+body {
+	background-color: tan
+}
+h1 {
+	color: black;
+}
+.border {
+	margin-top: 10px;
+	border-top: 2px solid black;
+}
+header {
+	font-size: 5%;
+}
+footer {
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px;
+	border-top: 2px solid black;
+	position:absolute;bottom:0;left:0;
+}
