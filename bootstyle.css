@@ -1,0 +1,25 @@
+
+
+.main-logo {
+	width: 200px;
+	height: 125px;
+	margin: 0px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url('Fk image.png') no-repeat;
+	background-size: 100%;
+
+
+}
+
+.navcustom {
+	background-color: rgb(12, 186, 255);
+}
+
+
+
+.navtextcustom {
+	margin-top: 50px;
+}
+
