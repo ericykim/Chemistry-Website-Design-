@@ -15,6 +15,10 @@ $(document).ready(function() {
 });
 
 function runAjax(input) {
+	$('.mspecificHeat').empty();
+	$('.bfPoint').empty();
+	$('.lstructure').empty();
+	$('.phaseChange').empty();
 	// var url = 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=' +  input + '&appid=397E2T-UKTJ5XUVH5&includepodid=Basic:ChemicalData';
 	var url = 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=molar%20mass%20' +  input + '&appid=397E2T-UKTJ5XUVH5&includepodid=Result';
 	$.ajax({
@@ -26,7 +30,7 @@ function runAjax(input) {
 			$(data).find('pod subpod').each(function() {
 				var molarMass = $(this).find('plaintext').text();
 				console.log(molarMass);
-				$('.outPut').append('<p>Molar Mass: ' + molarMass + '</p>')
+				$('.mspecificHeat').append('<strong>Molar Mass: </strong>' + molarMass + '<br>')
 				//$('.molarmass').text(molarMass);
 			});
 		},
@@ -44,7 +48,7 @@ function runAjax(input) {
 			$(data).find('pod subpod').each(function() {
 				var boilingPoint = $(this).find('plaintext').text();
 				console.log(boilingPoint);
-				$('.outPut').append('<p>Boiling point:' + boilingPoint + '</p>')
+				$('.bfPoint').append('<strong>Boiling point:</strong>' + boilingPoint + '<br>')
 				//$('.molarmass').text(molarMass);
 			});
 		},
@@ -60,7 +64,7 @@ function runAjax(input) {
 			$(data).find('pod subpod').each(function() {
 				var freezingPoint = $(this).find('plaintext').text();
 				console.log(freezingPoint);
-				$('.outPut').append('<p>Freezing point:' + freezingPoint + '</p>')
+				$('.bfPoint').append('<strong>Freezing point:</strong>' + freezingPoint + '<br>')
 				//$('.molarmass').text(molarMass);
 			});
 		},
@@ -76,12 +80,14 @@ function runAjax(input) {
 			$(data).find('pod subpod').each(function() {
 				var lewisStructure = $(this).find('img').attr('src');
 				//console.log(freezingPoint);
-				$('.outPut').append('<img src="' + lewisStructure + '"</img>')
+				$('.lstructure').append('<img  class="lewisImage" src="' + lewisStructure + '"</img><br>')
 				//$('.molarmass').text(molarMass);
 			});
 		},
 		
 	});
+
+
 
 	$.ajax({
 		type: 'GET', 
@@ -90,9 +96,9 @@ function runAjax(input) {
 		success: function (data) {
 			console.log(data);
 			$(data).find('pod subpod').each(function() {
-				var lewisStructure = $(this).find('img').attr('src');
+				var phaseDiagram = $(this).find('img').attr('src');
 				//console.log(freezingPoint);
-				$('.outPut').append('<img src="' + lewisStructure + '"</img>')
+				$('.phaseChange').append('<img class="centered" src="' + phaseDiagram + '"</img><br>')
 				//$('.molarmass').text(molarMass);
 			});
 		},
@@ -109,11 +115,27 @@ function runAjax(input) {
 			$(data).find('pod subpod').each(function() {
 				var specificHeat = $(this).find('plaintext').text();
 				//console.log(freezingPoint);
-				$('.outPut').append('<p> Specific Heat: ' + specificHeat +'</p>')
+				$('.mspecificHeat').append('<strong> Specific Heat:</strong>' + specificHeat +'<br>')
 				//$('.molarmass').text(molarMass);
 			});
 		},
 		
 	});
+
+	/*$.ajax({
+		type: 'GET', 
+		url: 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=3d%20structure%20NH3&appid=397E2T-UKTJ5XUVH5&includepodid=3DStructure:ChemicalData',
+		dataType: 'xml',
+		success: function (data) {
+			console.log(data);
+			$(data).find('pod subpod').each(function() {
+				var 3dStructure = $(this).find('img').attr('src');
+				//console.log(freezingPoint);
+				$('.outPut').append('<img src = "' + 3dStructure +'"></img>')
+				//$('.molarmass').text(molarMass);
+			});
+		},
+		
+	}); */
 
 }

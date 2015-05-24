@@ -1,5 +1,4 @@
 
-
 .main-logo {
 	width: 200px;
 	height: 125px;
@@ -21,5 +20,35 @@
 
 .navtextcustom {
 	margin-top: 50px;
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
 }
 
+.red, .yellow, .blue, .gray {
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	font-size: 150%;
+}
+
+
+.lewisImage {
+	margin: 0 auto;
+}
+
+.whatEven {
+	font-family: 'Libre Baskerville', serif;
+}
+
+.activitySeries {
+	margin-top: 370px;
+}
+
+.Solubility-Rules {
+	margin-top: 25px;
+}
+
+.Molar-Mass {
+	margin: 0 auto;
+}
