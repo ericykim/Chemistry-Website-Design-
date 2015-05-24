@@ -99,4 +99,21 @@ function runAjax(input) {
 		
 	});
 
+
+	$.ajax({
+		type: 'GET', 
+		url: 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=specific%20heat%20'+ input +'&appid=397E2T-UKTJ5XUVH5&includepodid=Result',
+		dataType: 'xml',
+		success: function (data) {
+			console.log(data);
+			$(data).find('pod subpod').each(function() {
+				var specificHeat = $(this).find('plaintext').text();
+				//console.log(freezingPoint);
+				$('.outPut').append('<p> Specific Heat: ' + specificHeat +'</p>')
+				//$('.molarmass').text(molarMass);
+			});
+		},
+		
+	});
+
 }
