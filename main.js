@@ -20,7 +20,7 @@ function runAjax(input) {
 	$('.lstructure').empty();
 	$('.phaseChange').empty();
 	// var url = 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=' +  input + '&appid=397E2T-UKTJ5XUVH5&includepodid=Basic:ChemicalData';
-	var url = 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=molar%20mass%20' +  input + '&appid=397E2T-UKTJ5XUVH5&includepodid=Result';
+	var url = 'http://crossorigin.me/http://api.wolframalpha.com/v2/query?input=molar%20mass%20' +  input + '&appid=397E2T-UKTJ5XUVH5&includepodid=Result';
 	$.ajax({
 		type: 'GET', 
 		url: url,
@@ -41,7 +41,7 @@ function runAjax(input) {
 
 	$.ajax({
 		type: 'GET', 
-		url: 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=boiling%20point%20' + input +'&appid=397E2T-UKTJ5XUVH5&includepodid=Result',
+		url: 'http://crossorigin.me/http://api.wolframalpha.com/v2/query?input=boiling%20point%20' + input +'&appid=397E2T-UKTJ5XUVH5&includepodid=Result',
 		dataType: 'xml',
 		success: function (data) {
 			console.log(data);
@@ -57,7 +57,7 @@ function runAjax(input) {
 
 		$.ajax({
 		type: 'GET', 
-		url: 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=freezing%20point%20' + input +'&appid=397E2T-UKTJ5XUVH5&includepodid=Result',
+		url: 'http://crossorigin.me/http://api.wolframalpha.com/v2/query?input=freezing%20point%20' + input +'&appid=397E2T-UKTJ5XUVH5&includepodid=Result',
 		dataType: 'xml',
 		success: function (data) {
 			console.log(data);
@@ -73,7 +73,7 @@ function runAjax(input) {
 
 	$.ajax({
 		type: 'GET', 
-		url: 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=lewis%20stucture%20'+ input +'&appid=397E2T-UKTJ5XUVH5&includepodid=LewisDotStructureLargePod:ChemicalData',
+		url: 'http://crossorigin.me/http://api.wolframalpha.com/v2/query?input=lewis%20stucture%20'+ input +'&appid=397E2T-UKTJ5XUVH5&includepodid=LewisDotStructureLargePod:ChemicalData',
 		dataType: 'xml',
 		success: function (data) {
 			console.log(data);
@@ -91,7 +91,7 @@ function runAjax(input) {
 
 	$.ajax({
 		type: 'GET', 
-		url: 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=phase%20diagram%20'+ input +'&appid=397E2T-UKTJ5XUVH5&includepodid=BasicPhaseDiagram:ThermodynamicData',
+		url: 'http://crossorigin.me/http://api.wolframalpha.com/v2/query?input=phase%20diagram%20'+ input +'&appid=397E2T-UKTJ5XUVH5&includepodid=BasicPhaseDiagram:ThermodynamicData',
 		dataType: 'xml',
 		success: function (data) {
 			console.log(data);
@@ -108,7 +108,7 @@ function runAjax(input) {
 
 	$.ajax({
 		type: 'GET', 
-		url: 'http://cors.maxogden.com/http://cors.maxogden.com/http://api.wolframalpha.com/v2/query?input=specific%20heat%20'+ input +'&appid=397E2T-UKTJ5XUVH5&includepodid=Result',
+		url: 'http://crossorigin.me/http://api.wolframalpha.com/v2/query?input=specific%20heat%20'+ input +'&appid=397E2T-UKTJ5XUVH5&includepodid=Result',
 		dataType: 'xml',
 		success: function (data) {
 			console.log(data);
