@@ -1,12 +1,12 @@
 
 .main-logo {
 	width: 150px;
-	height: 94px;
+	height: 125px;
 	margin: 0px;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	background: url('Fk image.png') no-repeat;
+	background: url('hipster.png') no-repeat;
 	background-size: 100%;
 
 
@@ -71,7 +71,8 @@
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
     color: rgba(0, 0, 0, 1);
     background-color: rgba(12, 186, 255, 1);
-    margin: 20px 10px 20px 10px;
+    margin: 35px 10px 35px 10px;
+    font-size: 18px;
     
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
