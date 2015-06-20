@@ -3,31 +3,35 @@
 <head>
 	<title>Chem App</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="bootstyle.css">
 	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <!--<link rel="stylesheet" type="text/css" href="css/default.css" />-->
+  <script src="js/modernizr.custom.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="bootstyle.css">
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-	<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header"><a class="navbar-brand main-logo" href="#">Chelper</a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse navbar-menubuilder">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a>
-                </li>
-                <li><a href="#">Chemicals</a>
-                </li>
-                <li><a href="#Activity">Activity Series</a>
-                </li>
-                <li><a href="#Solubility">Solubility Rules</a>
-                </li>
-            </ul>
-        </div>
+<body class="cbp-spmenu-push">
+
+  <div class="fixed-nav-top cbp-spmenu-push">
+    <h1 class="nav-brand">Chelper</h1>
+    <div id="nav-icon4" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-</div>
+  </div>
+
+  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+      <h3>Menu</h3>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Tools</a>
+      <a href="#">Chemistry Topics</a>
+      
+  </nav>
+  
 	<center>
 	<div class="Molar-Mass centered">
 		<div class="container">
@@ -41,21 +45,22 @@
 				<div class="outPut">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-12 lstructure ">
-								
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6 bfPoint">
-								
-							</div>
-							<div class="col-sm-6 mspecificHeat centered">
+							<div class="col-sm-12 lstructure box">
 								
 							</div>
 						</div>
 						<br>
 						<div class="row">
-							<div class="col-sm-12 centered phaseChange">
+							<div class="col-sm-6 bfPoint box">
+								
+							</div>
+							<div class="col-sm-6 mspecificHeat centered box">
+								
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-12 centered phaseChange box">
 								
 							</div>
 						</div>	
@@ -215,10 +220,13 @@
 	</ol>
 		</div>
 	</div>
-	
+	<button id="showRight">Show/Hide Right Slide Menu</button>
 	<div class="footer"></div>
+  <script src="js/classie.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
+  <script src="js/hamburger.js"></script>
+
 </body>
 </html>

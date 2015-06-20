@@ -1,13 +1,17 @@
 
+body {
+	background-color: white;
+}
+
 .main-logo {
 	width: 150px;
 	height: 125px;
 	margin: 0px;
-	text-indent: 100%;
+	/*text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	background: url('hipster.png') no-repeat;
-	background-size: 100%;
+	background-size: 100%;*/
 
 
 }
@@ -52,62 +56,124 @@
 
 .Molar-Mass {
 	margin: 0 auto;
+	margin-top: 115px;
 }
+
+
 
 /******NAV BAR SHIT*****/
 
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(0, 0, 0, 1);
-    margin-left: 20px;
+
+/***icon animation shit**/
+
+.fixed-nav-top {
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	z-index: 9999;
+  	width: 100%;
+  	height: 90px;
+  	background-color: #258ECD;
 }
-#custom-bootstrap-menu.navbar-default {
-    font-size: 15px;
-    background-color: rgba(12, 186, 255, 1);
-    border-width: 0px;
-    border-radius: 0px;
+
+.nav-brand {
+	float: left;
+	padding-left: 15px;
+	font-family: 'Pacifico', cursive;
+	color: white;
+	font-size: 320%;
+}
+
+.menu-icon {
+	float: right;
+	top: 25px;
+	right: 15px;
+	
+}
+
+#nav-icon4 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 0 auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 4px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon4 {
+}
+
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}
 
 
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(0, 0, 0, 1);
-    background-color: rgba(12, 186, 255, 1);
-    margin: 35px 10px 35px 10px;
-    font-size: 18px;
-    
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(9, 139, 191, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #098bbf;
-    margin: 27px 20px 20px 30px;
-    border-radius: 0;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #098bbf;
-
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #098bbf;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #0cbaff;
-}
-body {margin-top: 150px;}
-.activitySeries {
-	padding-top: 100px;
-}
-.Solubility-Rules {
-	margin: 100px;
-	padding-top: 100px;
-}
