@@ -1,6 +1,9 @@
 
 body {
-	background-color: white;
+	background-color: #EAF9FF;
+}
+h1,h2,h3,h4,li,p {
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .main-logo {
@@ -81,13 +84,13 @@ body {
 	padding-left: 15px;
 	font-family: 'Pacifico', cursive;
 	color: white;
-	
+
 }
 
 .menu-icon {
 	float: right;
-	
-	
+
+
 }
 
 #nav-icon4 {
@@ -176,5 +179,3 @@ body {
   top: 39px;
   left: 8px;
 }
-
-
